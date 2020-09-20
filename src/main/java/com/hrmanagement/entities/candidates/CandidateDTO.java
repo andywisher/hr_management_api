@@ -1,7 +1,7 @@
-package com.armanc.hrmanagement.entities.candidates;
+package com.hrmanagement.entities.candidates;
 
-import com.armanc.hrmanagement.entities.customvalidation.CheckAgeValidation;
-import com.armanc.hrmanagement.entities.jobs.Job;
+import com.hrmanagement.entities.customvalidation.CheckAgeValidation;
+import com.hrmanagement.entities.jobs.Job;
 import lombok.Data;
 import org.springframework.data.annotation.ReadOnlyProperty;
 

@@ -1,6 +1,6 @@
-package com.armanc.hrmanagement.entities.jobs;
+package com.hrmanagement.entities.jobs;
 
-import com.armanc.hrmanagement.entities.candidates.Candidate;
+import com.hrmanagement.entities.candidates.Candidate;
 import lombok.Data;
 import org.springframework.data.annotation.ReadOnlyProperty;
 

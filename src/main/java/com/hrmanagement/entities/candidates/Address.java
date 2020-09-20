@@ -1,4 +1,4 @@
-package com.armanc.hrmanagement.entities.candidates;
+package com.hrmanagement.entities.candidates;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import lombok.Data;

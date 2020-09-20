@@ -1,4 +1,4 @@
-package com.armanc.hrmanagement.entities.customvalidation;
+package com.hrmanagement.entities.customvalidation;
 
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;

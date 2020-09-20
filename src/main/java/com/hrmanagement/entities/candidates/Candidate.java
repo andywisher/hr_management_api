@@ -1,8 +1,9 @@
-package com.armanc.hrmanagement.entities.candidates;
+package com.hrmanagement.entities.candidates;
 
 
-import com.armanc.hrmanagement.entities.jobs.Job;
 import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.hrmanagement.entities.jobs.Job;
 import lombok.Data;
 
 import javax.persistence.*;
@@ -30,6 +31,10 @@ public class Candidate {
     @Column(name = "email", unique = true)
     private String email;
 
+    @Column(name = "password", nullable = false)
+    @JsonIgnore
+    private String password;
+
     @Column(name = "birthday")
     private LocalDate birthday;
 
@@ -39,6 +44,9 @@ public class Candidate {
     @Column(name = "img_address")
     private String imgURL;
 
+    @Column(name = "role")
+    private String role;
+
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "address_id", referencedColumnName = "id")
     private Address address;
@@ -46,6 +54,7 @@ public class Candidate {
     @ManyToMany(mappedBy = "appliedCandidates", targetEntity = Job.class, fetch = FetchType.EAGER)
     @JsonBackReference
     private Set<Job> appliedJobs = new HashSet<>();
+
 
     public Candidate() {
     }

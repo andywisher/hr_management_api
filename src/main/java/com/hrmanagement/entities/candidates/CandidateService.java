@@ -1,8 +1,9 @@
-package com.armanc.hrmanagement.entities.candidates;
+package com.hrmanagement.entities.candidates;
 
-import com.armanc.hrmanagement.entities.jobs.Job;
-import com.armanc.hrmanagement.entities.jobs.JobDAO;
+import com.hrmanagement.entities.jobs.Job;
+import com.hrmanagement.entities.jobs.JobDAO;
 import lombok.AllArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -16,8 +17,11 @@ import java.util.Set;
 @AllArgsConstructor
 public class CandidateService {
 
+    @Autowired
     private final CandidateMapper candidateMapper;
+    @Autowired
     private final CandidateDAO candidateDAO;
+    @Autowired
     private final JobDAO jobDAO;
 
     public List<CandidateDTO> getAllCandidates() {

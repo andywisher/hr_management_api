@@ -1,4 +1,4 @@
-package com.armanc.hrmanagement.entities.jobs;
+package com.hrmanagement.entities.jobs;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;

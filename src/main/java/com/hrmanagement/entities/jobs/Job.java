@@ -1,7 +1,7 @@
-package com.armanc.hrmanagement.entities.jobs;
+package com.hrmanagement.entities.jobs;
 
-import com.armanc.hrmanagement.entities.candidates.Candidate;
 import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.hrmanagement.entities.candidates.Candidate;
 import lombok.Data;
 
 import javax.persistence.*;
